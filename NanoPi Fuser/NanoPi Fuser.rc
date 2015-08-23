@@ -1,0 +1,205 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\NanoPi Fuser.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NANOPIFUSER_FORM DIALOGEX 0, 0, 300, 170
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Disk Image",IDC_FILE1_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,10,60,10
+    EDITTEXT        IDC_FILE1_EDIT,75,9,165,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_FILE1_BROWSE_BUTTON,245,9,45,12
+    CONTROL         "Bootloader",IDC_FILE2_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,27,60,10
+    EDITTEXT        IDC_FILE2_EDIT,75,26,165,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_FILE2_BROWSE_BUTTON,245,26,45,12
+    CONTROL         "Environment",IDC_FILE3_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,44,60,10
+    EDITTEXT        IDC_FILE3_EDIT,75,43,165,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_FILE3_BROWSE_BUTTON,245,43,45,12,WS_DISABLED
+    CONTROL         "Kernel",IDC_FILE4_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,61,60,10
+    EDITTEXT        IDC_FILE4_EDIT,75,60,165,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_FILE4_BROWSE_BUTTON,245,60,45,12,WS_DISABLED
+    LTEXT           "Physical Drive",IDC_STATIC,10,79,49,8
+    COMBOBOX        IDC_PHYSICAL_DRIVE_COMBOBOX,75,77,215,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "SD Fuse",IDC_SD_FUSE_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,10,95,60,10
+    CONTROL         "SDHC Fuse",IDC_SDHC_FUSE_RADIO,"Button",BS_AUTORADIOBUTTON,75,95,60,10
+    CONTROL         "",IDC_FUSE_PROGRESS,"msctls_progress32",WS_BORDER,10,111,280,12
+    CTEXT           "Message here...",IDC_MESSAGE_LABEL,10,128,280,8
+    PUSHBUTTON      "Start Fusing",IDC_START_FUSE_BUTTON,110,143,80,16
+    PUSHBUTTON      "Cancel",IDC_CANCEL_BUTTON,110,143,80,16,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_NANOPIFUSER_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 295
+        VERTGUIDE, 10
+        VERTGUIDE, 59
+        VERTGUIDE, 70
+        VERTGUIDE, 75
+        VERTGUIDE, 100
+        VERTGUIDE, 150
+        VERTGUIDE, 200
+        VERTGUIDE, 240
+        VERTGUIDE, 245
+        VERTGUIDE, 290
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 164
+        HORZGUIDE, 15
+        HORZGUIDE, 32
+        HORZGUIDE, 49
+        HORZGUIDE, 66
+        HORZGUIDE, 83
+        HORZGUIDE, 100
+        HORZGUIDE, 117
+        HORZGUIDE, 132
+        HORZGUIDE, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,1
+ PRODUCTVERSION 1,0,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "NanoPi Fuser Module"
+            VALUE "FileVersion", "1.0.1.1"
+            VALUE "InternalName", "NanoPi Fuser"
+            VALUE "LegalCopyright", "Copyright 2015"
+            VALUE "OriginalFilename", "NanoPi Fuser.exe"
+            VALUE "ProductName", "NanoPi Fuser Module"
+            VALUE "ProductVersion", "1.0.1.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "NanoPi Fuser"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

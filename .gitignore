@@ -1,0 +1,9 @@
+/Debug
+/ipch
+/NanoPi Fuser/Debug
+/NanoPi Fuser/Release
+/Release
+*.aps
+*.opensdf
+*.sdf
+*.suo
